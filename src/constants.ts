@@ -44,7 +44,7 @@ export const FLASHCARD_DATA: Chapter[] = [
       {
         id: 6,
         soalan: "APAKAH TUJUAN MNC",
-        jawapan: "1. Meningkatkan jualan: Sebuah organisasi akan berusaha meningkatkan jualan yang lebih tinggi dengan meninggikan daya saing domestik.\n2. Meningkatkan keuntungan: Meningkatkan keuntungan.\n3. Meluaskan Operasi: Kebergantungan kepada pasaran yang sedia ada menyebabkan syarikat meluaskan operasi ke negara lain.\n4. Memperoleh syer pasaran global: Melalui cara ini, syarikat secara tidak langsung memperoleh syer pasaran global."
+        jawapan: "1. Meningkatkan jualan dan keuntungan: Sebuah organisasi akan berusaha meningkatkan jualan yang lebih tinggi dengan meninggikan daya saing domestik.\n2. Meluaskan Operasi: Kebergantungan kepada pasaran yang sedia ada menyebabkan syarikat meluaskan operasi ke negara lain.\n3. Memperoleh syer pasaran global: Melalui cara ini, syarikat secara tidak langsung memperoleh syer pasaran global."
       },
       {
         id: 7,
