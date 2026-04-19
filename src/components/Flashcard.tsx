@@ -8,9 +8,28 @@ interface FlashcardProps {
 }
 
 export const Flashcard = ({ soalan, jawapan, isFlipped, onFlip }: FlashcardProps) => {
+  const formatJawapan = (text: string) => {
+    return text.split('\n').map((line, index) => {
+      const parts = line.split(':');
+      if (parts.length > 1) {
+        return (
+          <p key={index} className="mb-4 last:mb-0">
+            <strong className="text-brand-pink-600 block mb-1">{parts[0].trim()}:</strong>
+            <span>{parts.slice(1).join(':').trim()}</span>
+          </p>
+        );
+      }
+      return (
+        <p key={index} className="mb-4 last:mb-0">
+          {line.trim()}
+        </p>
+      );
+    });
+  };
+
   return (
     <div 
-      className="relative w-full aspect-[3/4] max-w-[320px] cursor-pointer perspective-1000 group"
+      className="relative w-full aspect-[4/5] sm:aspect-[3/4] max-w-[280px] sm:max-w-[320px] cursor-pointer perspective-1000 group mx-auto"
       onClick={onFlip}
     >
       <motion.div
@@ -19,25 +38,25 @@ export const Flashcard = ({ soalan, jawapan, isFlipped, onFlip }: FlashcardProps
         transition={{ type: 'spring', stiffness: 260, damping: 20 }}
       >
         {/* Front Side */}
-        <div className="absolute inset-0 backface-hidden bg-white rounded-[32px] p-8 flex flex-col items-center justify-center text-center shadow-hard-lg border-[5px] border-brand-pink-900">
-          <div className="card-label mb-6 text-[12px] font-black uppercase tracking-widest text-brand-pink-500 bg-brand-pink-50 border-2 border-brand-pink-500 px-3 py-1">
+        <div className="absolute inset-0 backface-hidden bg-white rounded-[24px] sm:rounded-[32px] p-6 sm:p-8 flex flex-col items-center justify-center text-center shadow-hard-lg border-[4px] sm:border-[5px] border-brand-pink-900">
+          <div className="card-label mb-4 sm:mb-6 text-[10px] sm:text-[12px] font-black uppercase tracking-widest text-brand-pink-500 bg-brand-pink-50 border-2 border-brand-pink-500 px-3 py-1">
              KAD: SOALAN
           </div>
-          <h2 className="text-xl md:text-2xl font-black text-brand-pink-900 leading-tight uppercase font-cute">
+          <h2 className="text-lg md:text-2xl font-black text-brand-pink-900 leading-tight uppercase font-cute px-2">
             {soalan}
           </h2>
-          <div className="mt-10 text-brand-pink-500 font-black text-[10px] tracking-widest animate-bounce">
+          <div className="mt-6 sm:mt-10 text-brand-pink-500 font-black text-[9px] sm:text-[10px] tracking-widest animate-bounce">
              TAP UNTUK LIHAT JAWAPAN
           </div>
         </div>
 
         {/* Back Side */}
-        <div className="absolute inset-0 backface-hidden rotate-y-180 bg-brand-pink-50 rounded-[32px] p-8 flex flex-col shadow-hard-lg border-[5px] border-brand-pink-900 overflow-y-auto custom-scrollbar">
-           <div className="card-label mb-6 text-[12px] font-black uppercase tracking-widest text-brand-pink-500 bg-white border-2 border-brand-pink-500 px-3 py-1 self-center sticky top-0">
+        <div className="absolute inset-0 backface-hidden rotate-y-180 bg-brand-pink-50 rounded-[24px] sm:rounded-[32px] p-6 sm:p-8 flex flex-col shadow-hard-lg border-[4px] sm:border-[5px] border-brand-pink-900 overflow-y-auto custom-scrollbar">
+           <div className="card-label mb-4 sm:mb-6 text-[10px] sm:text-[12px] font-black uppercase tracking-widest text-brand-pink-500 bg-white border-2 border-brand-pink-500 px-3 py-1 self-center sticky top-0">
               JAWAPAN
            </div>
-           <div className="text-brand-pink-900 font-bold whitespace-pre-wrap text-sm md:text-base leading-relaxed font-content">
-             {jawapan}
+           <div className="text-brand-pink-900 font-bold text-xs sm:text-sm leading-relaxed font-content">
+             {formatJawapan(jawapan)}
            </div>
         </div>
       </motion.div>

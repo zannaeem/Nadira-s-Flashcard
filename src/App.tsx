@@ -49,14 +49,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen max-w-[380px] mx-auto relative flex flex-col bg-brand-pink-50 border-[8px] border-brand-pink-900 rounded-[40px] my-6 shadow-hard-xl overflow-hidden font-cute">
+    <div className="min-h-screen sm:min-h-[90vh] max-w-[380px] mx-auto relative flex flex-col bg-brand-pink-50 border-[4px] sm:border-[8px] border-brand-pink-900 rounded-[24px] sm:rounded-[40px] my-0 sm:my-6 shadow-hard-xl overflow-hidden font-cute">
       {/* Anime Background Pattern */}
       <div className="absolute inset-0 anime-pattern opacity-10 -z-10"></div>
 
       {/* Header */}
-      <header className="w-full bg-brand-pink-100 py-6 px-4 text-center border-b-[4px] border-brand-pink-900">
+      <header className="w-full bg-brand-pink-100 py-3 sm:py-6 px-4 text-center border-b-[4px] border-brand-pink-900">
         <motion.h1 
-          className="inline-block bg-brand-pink-500 text-white px-4 py-1.5 border-[3px] border-brand-pink-900 font-black text-2xl uppercase italic -rotate-2"
+          className="inline-block bg-brand-pink-500 text-white px-4 py-1.5 border-[3px] border-brand-pink-900 font-black text-xl sm:text-2xl uppercase italic -rotate-2"
           whileHover={{ rotate: 0 }}
         >
           nadira's flashcard
@@ -69,7 +69,7 @@ export default function App() {
           <button
             key={bab.id}
             onClick={() => toggleBab(index)}
-            className={`flex-1 py-4 text-[14px] font-black tracking-widest transition-colors duration-200 border-r-[4px] last:border-r-0 border-brand-pink-900 ${
+            className={`flex-1 py-3 sm:py-4 text-[12px] sm:text-[14px] font-black tracking-widest transition-colors duration-200 border-r-[4px] last:border-r-0 border-brand-pink-900 ${
               currentBabIndex === index
                 ? 'bg-brand-pink-500 text-white'
                 : 'text-brand-pink-900 bg-brand-pink-100 hover:bg-brand-pink-200'
@@ -81,14 +81,14 @@ export default function App() {
       </div>
 
       {/* Main Study Area */}
-      <main className="flex-1 relative flex flex-col items-center p-6 bg-brand-pink-50">
+      <main className="flex-1 relative flex flex-col items-center p-3 sm:p-6 bg-brand-pink-50 overflow-hidden">
         {/* Progress Counter */}
-        <div className="absolute top-4 right-4 bg-brand-pink-900 text-white px-4 py-1 rounded-full text-[12px] font-black z-10 border-2 border-brand-pink-900">
+        <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-brand-pink-900 text-white px-3 py-0.5 sm:px-4 sm:py-1 rounded-full text-[10px] sm:text-[12px] font-black z-10 border-2 border-brand-pink-900">
            {String(currentCardIndex + 1).padStart(2, '0')} / {String(totalCards).padStart(2, '0')}
         </div>
 
-        {/* Progress Mini-bar (optional but kept for continuity) */}
-        <div className="w-full mt-8 h-1.5 bg-brand-pink-100 border-2 border-brand-pink-900 rounded-full overflow-hidden mb-8">
+        {/* Progress Mini-bar */}
+        <div className="w-full mt-6 sm:mt-8 h-1 bg-brand-pink-100 border-2 border-brand-pink-900 rounded-full overflow-hidden mb-4 sm:mb-8">
            <motion.div 
              className="h-full bg-brand-pink-500" 
              animate={{ width: `${((currentCardIndex + 1) / totalCards) * 100}%` }}
@@ -96,7 +96,7 @@ export default function App() {
         </div>
 
         {/* Flashcard Viewport */}
-        <div className="w-full flex-grow flex items-center justify-center perspective-1000">
+        <div className="w-full h-full flex items-center justify-center perspective-1000">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={`${currentBabIndex}-${currentCardIndex}`}
@@ -118,30 +118,30 @@ export default function App() {
       </main>
 
       {/* Footer Controls */}
-      <footer className="w-full bg-brand-pink-100 border-t-[4px] border-brand-pink-900 p-6">
-        <div className="flex gap-4">
+      <footer className="w-full bg-brand-pink-100 border-t-[4px] border-brand-pink-900 p-4 sm:p-6 pb-2">
+        <div className="flex gap-3 sm:gap-4">
           <button
             onClick={handlePrev}
             disabled={currentCardIndex === 0}
-            className="flex-1 py-3 bg-brand-pink-500 text-white font-black rounded-xl border-[3px] border-brand-pink-900 shadow-hard-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_#831843] disabled:opacity-50 transition-all uppercase tracking-widest text-sm"
+            className="flex-1 py-2 sm:py-3 bg-brand-pink-500 text-white font-black rounded-xl border-[3px] border-brand-pink-900 shadow-hard-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_#831843] disabled:opacity-50 transition-all uppercase tracking-widest text-[11px] sm:text-sm"
           >
             Sebelum
           </button>
           <button
             onClick={handleNext}
             disabled={currentCardIndex === totalCards - 1}
-            className="flex-1 py-3 bg-brand-pink-500 text-white font-black rounded-xl border-[3px] border-brand-pink-900 shadow-hard-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_#831843] disabled:opacity-50 transition-all uppercase tracking-widest text-sm"
+            className="flex-1 py-2 sm:py-3 bg-brand-pink-500 text-white font-black rounded-xl border-[3px] border-brand-pink-900 shadow-hard-md active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_#831843] disabled:opacity-50 transition-all uppercase tracking-widest text-[11px] sm:text-sm"
           >
             Seterusnya
           </button>
         </div>
 
-        <div className="mt-4 pt-4 border-t-2 border-brand-pink-200 text-center">
+        <div className="mt-2 sm:mt-4 pt-2 sm:pt-4 border-t-2 border-brand-pink-200 text-center">
             <button 
               onClick={handleReset}
-              className="text-[10px] font-black text-brand-pink-500 hover:text-brand-pink-900 transition-colors uppercase tracking-[3px] flex items-center justify-center gap-2 mx-auto"
+              className="text-[9px] sm:text-[10px] font-black text-brand-pink-500 hover:text-brand-pink-900 transition-colors uppercase tracking-[2px] sm:tracking-[3px] flex items-center justify-center gap-2 mx-auto"
             >
-              <RotateCcw size={12} strokeWidth={3} />
+              <RotateCcw size={10} strokeWidth={3} />
               Mula Semula ⚡️
             </button>
         </div>
