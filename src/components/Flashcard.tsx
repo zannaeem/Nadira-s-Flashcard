@@ -33,9 +33,9 @@ export const Flashcard = ({ soalan, jawapan, isFlipped, onFlip }: FlashcardProps
       onClick={onFlip}
     >
       <motion.div
-        className="w-full h-full relative transform-style-3d transition-all duration-700"
+        className="w-full h-full relative transform-style-3d"
         animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+        transition={{ type: 'spring', stiffness: 450, damping: 35, mass: 0.8 }}
       >
         {/* Front Side */}
         <div className="absolute inset-0 backface-hidden bg-white rounded-[24px] sm:rounded-[32px] p-6 sm:p-8 flex flex-col items-center justify-center text-center shadow-hard-lg border-[4px] sm:border-[5px] border-brand-pink-900">
