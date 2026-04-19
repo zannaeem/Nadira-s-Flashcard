@@ -105,7 +105,7 @@ export const FLASHCARD_DATA: Chapter[] = [
       {
         id: 5,
         soalan: "JELASKAN TANGGUNGJAWAB SOSIAL KORPORAT",
-        jawapan: "Proaktif: Kepentingan umum akan dipelajari dan dipenuhi tanpa menunggu tekanan daripada mana-mana pihak yang berkepentingan.\nDefensif: Organisasi akan mengakui sebahagian daripada kesalahannya jika dituntut oleh mana-mana pihak berkepentingan.\nPemudahcara: Menerima tanggungjawab sosial sebagai salah satu tanggungjawab yang perlu disempurnakan (secara minima)."
+        jawapan: "Proaktif: Kepentingan umum akan dipelajari dan dipenuhi tanpa menunggu tekanan daripada mana-mana pihak yang berkepentingan.\nDefensif: Organisasi akan mengakui sebahagian daripada kesalahannya jika dituntut oleh mana-mana pihak berkepentingan.\nPemudahcara: Menerima tanggungjawab sosial sebagai salah satu tanggungjawab yang perlu disempurnakan (secara minima).\n\n- sincerely Naeem"
       }
     ]
   }
