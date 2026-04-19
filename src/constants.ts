@@ -85,12 +85,12 @@ export const FLASHCARD_DATA: Chapter[] = [
       {
         id: 1,
         soalan: "MAKSUD ETIKA PERNIAGAAN",
-        jawapan: "Prinsip-prinsip dan standard yang dijadikan sebagai panduan oleh individu dan kumpulan dalam dunia perniagaan.\nKajian ke atas tingkah laku moral yang menghasilkan peraturan dan prinsip dalam situasi perniagaan.\nSatu set nilai dan peraturan yang menerangkan perlakuan betul atau salah seseorang peniaga dalam menjalankan aktiviti perniagaan."
+        jawapan: "- Prinsip-prinsip dan standard yang dijadikan sebagai panduan oleh individu dan kumpulan dalam dunia perniagaan."
       },
       {
         id: 2,
         soalan: "JELASKAN PENDEKATAN TINDAKAN BERETIKA",
-        jawapan: "Pendekatan Utilitarian: Pendekatan ini menyatakan bahawa akibat dari sesuatu tindakan yang diambil dapat memberi faedah atau manfaat terbaik kepada bilangan orang yang lebih ramai.\nPendekatan Individualisme: Prinsip ini menyatakan yang seseorang individu berhak untuk bertindak mengikut sesuatu cara yang difikirkan betul.\nPendekatan Hak Moral: Individu mempunyai hak untuk dilindungi, memiliki kehidupan yang selamat dan tidak boleh diancam oleh mana-mana pihak.\nPendekatan Keadilan: Pendekatan ini menilai keputusan dan kelakuan pengurus syarikat tentang sejauh mana keadilan mereka membahagikan ganjaran dan perbelanjaan di antara individu, kumpulan atau organisasi."
+        jawapan: "- Pendekatan Utilitarian: Pendekatan ini menyatakan bahawa akibat dari sesuatu tindakan yang diambil dapat memberi faedah atau manfaat terbaik kepada bilangan orang yang lebih ramai.\n- Pendekatan Individualisme: Prinsip ini menyatakan yang seseorang individu berhak untuk bertindak mengikut sesuatu cara yang difikirkan betul.\n- Pendekatan Hak Moral:\n  a) Hak untuk Mendapat Keselamatan\n  b) Hak untuk Mendapat Maklumat\n  c) Hak Untuk Membuat Pilihan\n  d) Hak Untuk Menyuarakan Pendapat\n  e) Hak Keperibadian Individu\n- Pendekatan Keadilan: Pendekatan ini menilai keputusan dan kelakuan pengurus syarikat tentang sejauh mana keadilan mereka membahagikan ganjaran dan perbelanjaan di antara individu, kumpulan atau organisasi."
       },
       {
         id: 3,
@@ -100,7 +100,7 @@ export const FLASHCARD_DATA: Chapter[] = [
       {
         id: 4,
         soalan: "JELASKAN TANGGUNGJAWAB SOSIAL TERHADAP PIHAK BERKEPENTINGAN",
-        jawapan: "Tanggungjawab Sosial Terhadap Pengguna: Membekalkan label yang menyatakan maklumat tentang kualiti & kegunaan produk dengan tepat, dapat difahami dan tidak mengelirukan pengguna.\nTanggungjawab Sosial Terhadap Pekerja: Jaminan kesihatan, tempat kerja yang selamat dan perlindungan keselamatan semasa bekerja.\nTanggungjawab Sosial Terhadap Komuniti: Mewujudkan peluang pekerjaan kepada penduduk setempat. Berusaha untuk membangunkan dan memakmurkan komuniti setempat.\nTanggungjawab Sosial Terhadap Pelabur: Memastikan pulangan yang baik terhadap pelaburan yang dibuat melalui kegiatan yang menguntungkan melalui pembayaran dividen.\nTanggungjawab Sosial Terhadap Kerajaan: Menyokong dasar kerajaan serta mengambil bahagian dalam pelbagai program yang dianjurkan oleh kerajaan. (kempen kitar semula).\nTanggungjawab Sosial Terhadap Pembiaya: Memastikan syarikat mempunyai sumber kewangan yang cukup untuk membayar balik pinjaman.\nTanggungjawab Sosial Terhadap Pembekal: Memastikan semua syarat kontrak dipersetujui dan dipatuhi.\nTanggungjawab Sosial Terhadap Pesaing: Melaksanakan amalan persaingan yang sihat.\nTanggungjawab Sosial Terhadap Pihak Pengurusan: Memberi ganjaran kepada pekerja secara adil saksama untuk tingkatkan motivasi."
+        jawapan: "- Tanggungjawab Sosial Terhadap Pengguna: Pembungkusan label yang menyatakan maklumat tentang kualiti & kegunaan produk dengan tepat, dapat difahami dan tidak mengelirukan pengguna.\n- Tanggungjawab Sosial Terhadap Pekerja: Jaminan kesihatan, tempat kerja yang selamat dan perlindungan keselamatan semasa bekerja.\n- Tanggungjawab Sosial Terhadap Komuniti: Mewujudkan peluang pekerjaan kepada penduduk setempat.\n- Tanggungjawab Sosial Terhadap Pelabur: Menggunakan sumber dana dari pelabur dengan cekap dan berkesan.\n- Tanggungjawab Sosial Terhadap Kerajaan: Menyediakan laporan kewangan yang benar dan saksama.\n- Tanggungjawab Sosial Terhadap Pembiaya: Membekalkan maklumat kewangan perniagaan.\n- Tanggungjawab Sosial Terhadap Pembekal: Membayar pembekal mengikut tempoh masa yang ditetapkan.\n- Tanggungjawab Sosial Terhadap Pesaing: Melaksanakan amalan persaingan yang sihat.\n- Tanggungjawab Sosial Terhadap Pihak Pengurusan: Memberi ganjaran kepada pekerja secara adil saksama untuk tingkatkan motivasi."
       },
       {
         id: 5,
